@@ -1,15 +1,19 @@
 <template>
   <Title msg="Planify"/>
+  <Calendar />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Title from './components/Title.vue';
+import Calendar from './components/Calendar.vue';
+
 
 export default defineComponent({
   name: 'App',
   components: {
-    Title
+    Title,
+    Calendar
   }
 });
 </script>
