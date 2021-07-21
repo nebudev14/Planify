@@ -10,11 +10,21 @@ export default defineComponent({
   name: 'App',
   components: {
     Title
+  },
+  mounted() {
+    
   }
 });
 </script>
 
 <style>
+
+:root {
+  --primary-color: #42b983;
+  --primrary-color-dark: #189e74;
+  --text-color: #2c3e50;
+  --background-color: #fff;
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -22,11 +32,12 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   height: 100vh;
-  color: #2c3e50;
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: var(--background-color);
 
 }
 </style>

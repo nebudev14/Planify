@@ -20,7 +20,7 @@ export default defineComponent({
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
   .title {
     font-size: 350%;
   }
@@ -36,16 +36,17 @@ export default defineComponent({
     border-radius: 15px;
     color: #fff;
     font-size: 150%;
-    background-color: #42b983;
-    border: 1px solid #42b983;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.17), 0 17px 50px 0 rgba(0,0,0,0.11);
     transition: 300ms ease;
   }
 
   .btn:hover {
     cursor: pointer;
-    background-color: #189e74;
+    background-color: var(--primrary-color-dark);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
   
 </style>
