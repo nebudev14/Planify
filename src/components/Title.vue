@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="titleDiv">
     <h1 class="title">Planify</h1>
     <h2 class="desc">An easy way to plan out your day!</h2>
     <button v-on:click="getStarted" class="btn">Get started</button>
@@ -20,6 +20,11 @@ export default defineComponent({
 </script>
 
 <style>
+
+  .titleDiv {
+    position: absolute;
+  }
+
   .title {
     font-size: 350%;
   }

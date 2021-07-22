@@ -39,10 +39,13 @@ export default defineComponent({
 
     .themeBtn {
         border: none;
+        transition: transform 200ms ease;
     }
 
     .themeBtn:hover {
         cursor: pointer;
+        transform: scale(1.2);
+        transform: rotate(20deg);
     }
 
     #themeImage {
