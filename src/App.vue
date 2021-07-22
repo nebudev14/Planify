@@ -11,9 +11,6 @@ export default defineComponent({
   components: {
     Title
   },
-  mounted() {
-    
-  }
 });
 </script>
 
@@ -26,18 +23,27 @@ export default defineComponent({
   --background-color: #fff;
 }
 
+[data-theme="darkMode"] {
+  --text-color: #fff;
+  --background-color: #242629;
+}
+
+* {
+  background-color: var(--background-color);
+}
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  height: 100vh;
   color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--background-color);
-
+  height: 100vh;
 }
+
 </style>
