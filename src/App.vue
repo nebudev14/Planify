@@ -1,4 +1,5 @@
 <template>
+  <ToggleTheme />
   <div class="titlePage">
     <Title />
   </div>
@@ -7,11 +8,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Title from './components/Title.vue';
+import ToggleTheme from './components/ToggleTheme.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    Title
+    Title,
+    ToggleTheme
   },
 });
 </script>
@@ -32,10 +35,13 @@ export default defineComponent({
 
 * {
   background-color: var(--background-color);
-  
 }
 
-#app {
+body {
+  overflow: hidden;
+}
+
+.titlePage {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

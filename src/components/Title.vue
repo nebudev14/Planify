@@ -13,13 +13,12 @@ export default defineComponent({
   name: 'Title',
   methods: {
     getStarted() {
-      document.documentElement.setAttribute('data-theme', 'darkMode');
+      console.log("getting started");
     }
   }
 });
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
   .title {
     font-size: 350%;
@@ -48,5 +47,4 @@ export default defineComponent({
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transform: scale(1.03);
   }
-  
 </style>
