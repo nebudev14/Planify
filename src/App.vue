@@ -1,5 +1,7 @@
 <template>
-  <Title />
+  <div class="titlePage">
+    <Title />
+  </div>
 </template>
 
 <script lang="ts">
@@ -30,8 +32,8 @@ export default defineComponent({
 
 * {
   background-color: var(--background-color);
+  
 }
-
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -43,7 +45,7 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
 }
 
 </style>

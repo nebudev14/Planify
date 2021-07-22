@@ -13,7 +13,7 @@ export default defineComponent({
   name: 'Title',
   methods: {
     getStarted() {
-      console.log("getting started");
+      document.documentElement.setAttribute('data-theme', 'darkMode');
     }
   }
 });
@@ -30,7 +30,7 @@ export default defineComponent({
 
   .btn {
     display: inline-block;
-    margin-top: 3rem;
+    margin-top: 2rem;
     width: 200px;
     padding: 10px;
     border-radius: 15px;
