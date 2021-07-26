@@ -1,57 +1,30 @@
 <template>
-  <ToggleTheme />
-  <div class="titlePage">
-    <Title />
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
   </div>
+  <router-view/>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import Title from './components/Title.vue';
-import ToggleTheme from './components/ToggleTheme.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    Title,
-    ToggleTheme
-  },
-});
-</script>
-
 <style>
-
-:root {
-  --primary-color: #42b983;
-  --primrary-color-dark: #189e74;
-  --text-color: #2c3e50;
-  --background-color: #fff;
-}
-
-[data-theme="darkMode"] {
-  --text-color: #fff;
-  --background-color: #242629;
-}
-
-* {
-  background-color: var(--background-color);
-}
-
-body {
-  overflow: hidden;
-}
-
-.titlePage {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 95vh;
+  color: #2c3e50;
 }
 
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>
