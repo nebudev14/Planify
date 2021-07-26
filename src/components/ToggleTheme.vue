@@ -23,7 +23,6 @@ export default defineComponent({
         else if (currentTheme == 'darkMode') {
             document.documentElement.setAttribute('data-theme', '');
         }
-        
     }
   }
 });
