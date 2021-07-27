@@ -8,12 +8,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import router from '../router/';
+
 
 export default defineComponent({
   name: 'Title',
   methods: {
     getStarted() {
-      console.log("getting started");
+      
+      router.push({ path: `/planner` })
     }
   }
 });
