@@ -1,5 +1,6 @@
 <template>
     <h1>{{ plans }}</h1>
+    <button v-on:click="routeToStart" class="btn">Back</button>
 </template>
 
 <script lang="ts">
@@ -19,7 +20,7 @@ export default defineComponent({
     },
     methods: {
         routeToStart() {
-            
+            router.push({ path: `/` })
         }
     }
 })
