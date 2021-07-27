@@ -15,7 +15,6 @@ export default defineComponent({
   name: 'Title',
   methods: {
     getStarted() {
-      
       router.push({ path: `/planner` })
     }
   }

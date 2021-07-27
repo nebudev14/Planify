@@ -4,6 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import router from '../router';
 
 var month:string = (new Date().getMonth()+1).toString();
 var day:string = new Date().getDate().toString();
@@ -15,10 +16,15 @@ export default defineComponent({
         return {
             plans: month + "/" + day + "/" + year
         }
+    },
+    methods: {
+        routeToStart() {
+            
+        }
     }
 })
 </script>
 
-<style scoped>
+<style>
 
 </style>
