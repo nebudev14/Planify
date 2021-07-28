@@ -1,3 +1,7 @@
+<template>
+  <Calendar />
+</template>
+
 <script lang="ts">
   import { computed, ComputedRef, defineComponent } from 'vue';
   import router from '../router';

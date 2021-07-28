@@ -1,6 +1,6 @@
 <template>
   <ToggleTheme />
-  <div class="startContainer">
+  <div class="mainContainer">
     <Title />
   </div>
   
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style>
-  .startContainer {
+  .mainContainer {
     height: 95vh;
     display: flex;
     align-items: center;

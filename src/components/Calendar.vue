@@ -1,6 +1,8 @@
 <template>
     <h1>{{ plans }}</h1>
-    <button v-on:click="routeToStart" class="btn">Back</button>
+    <div class="mainContainer">
+        <button v-on:click="routeToStart" class="btn">Back</button>
+    </div>
 </template>
 
 <script lang="ts">
