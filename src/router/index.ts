@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Start from '../views/Start.vue';
+import Planner from '../views/Planner.vue';
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -10,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/planner',
         name: 'Planner',
-        component: () => import('../components/Calendar.vue')
+        component: Planner
     }
 ];
 

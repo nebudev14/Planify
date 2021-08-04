@@ -2,8 +2,11 @@
   <ToggleTheme />
   <div class="mainContainer">
     <Title />
+    <div>
+      <h2>NebuDev14</h2>
+    </div>
   </div>
-  
+
 </template>
 
 <script>

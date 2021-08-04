@@ -24,7 +24,7 @@ export default defineComponent({
 <style>
 
   .titleDiv {
-    position: absolute;
+    margin-bottom: 3rem;
   }
 
   .title {
