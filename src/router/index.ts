@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Start from '../views/Start.vue';
 import Planner from '../views/Planner.vue';
 
+
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
@@ -11,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/planner',
         name: 'Planner',
-        component: Planner
+        component: Planner 
     }
 ];
 

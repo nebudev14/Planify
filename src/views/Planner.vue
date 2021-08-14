@@ -1,24 +1,25 @@
 <template>
-  <Calendar />
-  <button v-on:click="routeToStart" class="btn">Back</button>
-
+  <ToggleTheme />
+  <div class="mainContainer">
+    <button v-on:click="routeToStart" class="btn">Back</button>
+    <Calendar />
+  </div>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
   import router from '../router';
+  import ToggleTheme from '@/components/ToggleTheme.vue';
   import Calendar from '@/components/Calendar.vue';
 
-  export default defineComponent({
+  export default {
     name: 'Planner',
-    components: Calendar,
+    components: { Calendar, ToggleTheme },
     methods: {
         routeToStart() {
             router.push({ path: `/` })
         }
     }
-
-  })
+  }
 
 </script>
 
